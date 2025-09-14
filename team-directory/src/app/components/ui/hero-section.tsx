@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import { Button } from "../shared/button";
 import Image from "next/image";
 import { HeroHeader } from "./hero8-header";
 import { InfiniteSlider } from "./infinite-slider";
