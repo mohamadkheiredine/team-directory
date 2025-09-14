@@ -77,7 +77,7 @@ export const columns: GridAwareColumn<Employee>[] = [
 ];
 
 const EmployeesTableLoading = () => {
-  const employees: Employee[] = Array.from({ length: 4 }, (_, index) => ({
+  const employees: Employee[] = Array.from({ length: 6 }, (_) => ({
     id: 0,
     slug: "Loading...",
     name: "Loading...",
