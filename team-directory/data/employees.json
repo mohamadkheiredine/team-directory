@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "slug": "alice-johnson",
     "name": "Alice Johnson",
     "title": "Software Engineer",
     "email": "alice.johnson@example.com",
@@ -8,6 +9,7 @@
   },
   {
     "id": 2,
+    "slug": "bob-smith",
     "name": "Bob Smith",
     "title": "Product Manager",
     "email": "bob.smith@example.com",
@@ -15,6 +17,7 @@
   },
   {
     "id": 3,
+    "slug": "carol-davis",
     "name": "Carol Davis",
     "title": "UX Designer",
     "email": "carol.davis@example.com",
@@ -22,6 +25,7 @@
   },
   {
     "id": 4,
+    "slug": "david-wilson",
     "name": "David Wilson",
     "title": "QA Engineer",
     "email": "david.wilson@example.com",
@@ -29,6 +33,7 @@
   },
   {
     "id": 5,
+    "slug": "emma-brown",
     "name": "Emma Brown",
     "title": "Marketing Specialist",
     "email": "emma.brown@example.com",
@@ -36,6 +41,7 @@
   },
   {
     "id": 6,
+    "slug": "frank-miller",
     "name": "Frank Miller",
     "title": "DevOps Engineer",
     "email": "frank.miller@example.com",
@@ -43,6 +49,7 @@
   },
   {
     "id": 7,
+    "slug": "grace-lee",
     "name": "Grace Lee",
     "title": "HR Manager",
     "email": "grace.lee@example.com",
@@ -50,6 +57,7 @@
   },
   {
     "id": 8,
+    "slug": "henry-martin",
     "name": "Henry Martin",
     "title": "Frontend Developer",
     "email": "henry.martin@example.com",
@@ -57,6 +65,7 @@
   },
   {
     "id": 9,
+    "slug": "isabella-clark",
     "name": "Isabella Clark",
     "title": "Backend Developer",
     "email": "isabella.clark@example.com",
@@ -64,9 +73,18 @@
   },
   {
     "id": 10,
+    "slug": "jack-turner",
     "name": "Jack Turner",
     "title": "Data Analyst",
     "email": "jack.turner@example.com",
+    "status": "Inactive"
+  },
+  {
+    "id": 11,
+    "slug": "mohamad-kheiredine",
+    "name": "Mohamad Kheiredine",
+    "title": "Data Analyst",
+    "email": "mohamad.kheiredine@example.com",
     "status": "Inactive"
   }
 ]
