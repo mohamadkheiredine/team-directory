@@ -15,7 +15,7 @@ import {
   getFilteredRowModel,
   VisibilityState,
 } from "@tanstack/react-table";
-import { cn } from "../../../../lib/utils/cn";
+import { cn } from "@/app/lib/utils/cn";
 import { Label } from "./label";
 import { useState } from "react";
 import { Select } from "./select";

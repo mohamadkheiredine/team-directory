@@ -2,8 +2,8 @@
 
 import * as SelectPrimitive from "@radix-ui/react-select";
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
-import { cn } from "../../../../lib/utils/cn";
-import { composeCompoundComponent } from "../../../../lib/utils/components";
+import { cn } from "@/app/lib/utils/cn";
+import { composeCompoundComponent } from "@/app/lib/utils/components";
 import { useModalStack } from "../../../../hooks/use-modal-stack";
 
 function SelectRoot({
