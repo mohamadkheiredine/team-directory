@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "title": "Software Engineer",
+    "email": "alice.johnson@example.com",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "title": "Product Manager",
+    "email": "bob.smith@example.com",
+    "status": "Inactive"
+  },
+  {
+    "id": 3,
+    "name": "Carol Davis",
+    "title": "UX Designer",
+    "email": "carol.davis@example.com",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "David Wilson",
+    "title": "QA Engineer",
+    "email": "david.wilson@example.com",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "Emma Brown",
+    "title": "Marketing Specialist",
+    "email": "emma.brown@example.com",
+    "status": "Inactive"
+  },
+  {
+    "id": 6,
+    "name": "Frank Miller",
+    "title": "DevOps Engineer",
+    "email": "frank.miller@example.com",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "name": "Grace Lee",
+    "title": "HR Manager",
+    "email": "grace.lee@example.com",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "name": "Henry Martin",
+    "title": "Frontend Developer",
+    "email": "henry.martin@example.com",
+    "status": "Inactive"
+  },
+  {
+    "id": 9,
+    "name": "Isabella Clark",
+    "title": "Backend Developer",
+    "email": "isabella.clark@example.com",
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "name": "Jack Turner",
+    "title": "Data Analyst",
+    "email": "jack.turner@example.com",
+    "status": "Inactive"
+  }
+]
