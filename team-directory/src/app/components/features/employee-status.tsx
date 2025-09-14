@@ -1,6 +1,6 @@
 import { Badge } from "../shared/badge";
-import { Employee } from "../../../../models/read";
-import { capitalize } from "../../../../lib/utils/string";
+import { Employee } from "@/app/models/employees/read";
+import { capitalize } from "@/app/lib/utils/string";
 
 type Props = {
   employee: Employee;

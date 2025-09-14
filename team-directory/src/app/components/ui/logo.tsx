@@ -1,5 +1,4 @@
-import { cn } from "../../../../lib/utils/cn";
-import { motion } from "motion/react";
+import { cn } from "@/app/lib/utils/cn";
 
 export const Logo = ({ className }: { className?: string }) => {
   return (

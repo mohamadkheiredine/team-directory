@@ -86,5 +86,29 @@
     "title": "Data Analyst",
     "email": "mohamad.kheiredine@example.com",
     "status": "Inactive"
+  },
+  {
+    "id": 12,
+    "name": "new employee",
+    "slug": "new-employee-d3372b",
+    "title": "QA engineer",
+    "email": "new-email@gmail.com",
+    "status": "inactive"
+  },
+  {
+    "id": 13,
+    "name": "Test employee",
+    "slug": "test-employee-1fb4c5",
+    "title": "Full stack developer",
+    "email": "test@gmail.com",
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "name": "test test",
+    "slug": "test-test-fb2a54",
+    "title": "test title",
+    "email": "test@gmail.com",
+    "status": "active"
   }
 ]

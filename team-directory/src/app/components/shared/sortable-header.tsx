@@ -3,7 +3,7 @@
 import { DropdownMenu } from "./dropdown-menu";
 import { ArrowDown, ArrowUp, ChevronsUpDown } from "lucide-react";
 import { Column } from "@tanstack/react-table";
-import { cn } from "../../../../lib/utils/cn";
+import { cn } from "@/app/lib/utils/cn";
 
 export default function SortableHeader<T>({
   label,

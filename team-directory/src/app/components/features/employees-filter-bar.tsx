@@ -1,7 +1,7 @@
 "use client";
 import { ColumnFiltersState, SortingState } from "@tanstack/react-table";
 import DebouncedInput from "../shared/debounced-input";
-import { cn } from "../../../../lib/utils/cn";
+import { cn } from "@/app/lib/utils/cn";
 import { SortDropdown } from "../shared/sort-dropdown";
 
 type EmployeeFilterBarProps = {

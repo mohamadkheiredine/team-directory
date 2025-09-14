@@ -10,7 +10,7 @@ import {
 } from "@tanstack/react-table";
 import Link from "next/link";
 import { useState } from "react";
-import { Employee } from "../../../../models/read";
+import { Employee } from "@/app/models/employees/read";
 import { EmployeesFilterBar } from "./employees-filter-bar";
 import EmployeeStatus from "./employee-status";
 

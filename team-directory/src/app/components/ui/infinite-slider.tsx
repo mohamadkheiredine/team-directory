@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "../../../../lib/utils/cn";
+import { cn } from "@/app/lib/utils/cn";
 import { useMotionValue, animate, motion } from "motion/react";
 import { useState, useEffect } from "react";
 import useMeasure from "react-use-measure";
