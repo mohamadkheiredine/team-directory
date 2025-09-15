@@ -38,8 +38,6 @@ const NewEmployeeForm = () => {
     },
   });
 
-  console.log("form.formState.errors", form.formState.errors);
-
   const isDirty = useMemo(() => {
     const isFormDirty = form.formState.isDirty;
     return isFormDirty;
