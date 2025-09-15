@@ -1,6 +1,6 @@
 // app/api/employees/route.ts
 import { NextResponse } from "next/server";
-import { getAllEmployees } from "@/app/lib/utils/employees";
+import { getAllEmployees } from "@/app/data-layer/employees";
 
 export async function GET() {
   const employees = getAllEmployees();

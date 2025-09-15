@@ -1,6 +1,6 @@
 import NewEmployeeForm from "@/app/components/features/new-employee-form";
 
-const NewEmployeePage = async () => {
+const NewEmployeePage = async () => { 
   return (
     <NewEmployeeForm />
   )
