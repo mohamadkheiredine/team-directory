@@ -84,3 +84,21 @@ export function editEmployee(id: number, updatedData: Partial<Employee>): Employ
     return undefined;
   }
 }
+
+export function deleteEmployee(id: number): void {
+  try {
+    if (!fs.existsSync(filePath)) {
+      console.error("employees.json file does not exist");
+      return;
+    }
+
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const employees: Employee[] = JSON.parse(jsonData);
+
+    const updatedEmployees = employees.filter(emp => emp.id !== id);
+
+    fs.writeFileSync(filePath, JSON.stringify(updatedEmployees, null, 2), "utf-8");
+  } catch (error) {
+    console.error("Error deleting employee:", error);
+  }
+}
