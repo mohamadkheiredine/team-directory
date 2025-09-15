@@ -6,9 +6,11 @@ import { Button } from "../shared/button";
 import Link from "next/link";
 import EditEmployeeForm from "./edit-employee-dialog";
 import { useState } from "react";
+import DeleteEmployeeDialog from "./delete-employee-dialog";
 
 const EmployeeView = ({ employee }: { employee: Employee }) => {
   const [isEditOpen, setIsEditOpen] = useState(false);
+  const [isDeleteOpen, setIsDeleteOpen] = useState(false);
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-4 sm:p-8">
       <Card className="relative w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
@@ -50,6 +52,7 @@ const EmployeeView = ({ employee }: { employee: Employee }) => {
           {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4">
             <EditEmployeeForm isOpen={isEditOpen} onOpenChange={setIsEditOpen} employee={employee} />
+            <DeleteEmployeeDialog employee={employee} isOpen={isDeleteOpen} onOpenChange={setIsDeleteOpen} />
             <Button className="w-full sm:w-auto px-6 py-2 bg-indigo-600 text-white rounded-full shadow-lg hover:bg-indigo-700 transition h-10" onClick={() => setIsEditOpen(true)}>
               Edit Employee
             </Button>
@@ -59,6 +62,9 @@ const EmployeeView = ({ employee }: { employee: Employee }) => {
             >
               Back to List
             </Link>
+            <Button className="w-full sm:w-auto px-6 py-2 bg-red-500 text-white rounded-full shadow-lg hover:bg-red-600 transition h-10" onClick={() => setIsDeleteOpen(true)}>
+              Delete Employee
+            </Button>
           </div>
         </Card.Content>
       </Card>

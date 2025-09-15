@@ -102,21 +102,5 @@
     "title": "Full stack developer",
     "email": "test@gmail.com",
     "status": "active"
-  },
-  {
-    "id": 14,
-    "name": "test test",
-    "slug": "test-test-fb2a54",
-    "title": "test title",
-    "email": "test@gmail.com",
-    "status": "active"
-  },
-  {
-    "id": 15,
-    "name": "Mohaamd",
-    "slug": "mohaamd-016f1b",
-    "title": "title",
-    "email": "email@gmail.com",
-    "status": "active"
   }
 ]
