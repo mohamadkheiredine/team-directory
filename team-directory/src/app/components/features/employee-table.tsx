@@ -40,7 +40,7 @@ export const columns: GridAwareColumn<Employee>[] = [
     cell: ({ row }) => {
       const employee = row.original;
       const name = employee.name;
-      const slug = employee.slug;
+      const id = employee.id;
 
       return (
         <div className="flex items-center space-x-2">
@@ -48,7 +48,7 @@ export const columns: GridAwareColumn<Employee>[] = [
             <Tooltip delayDuration={700}>
               <Tooltip.Trigger asChild>
                 <Link
-                  href={`/employees/${slug}`}
+                  href={`/employees/${id}`}
                   className="font-medium hover:underline text-xs lg:text-sm max-w-[10rem] lg:max-w-[20rem] truncate"
                 >
                   {name}

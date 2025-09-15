@@ -97,7 +97,7 @@ const NewEmployeeForm = () => {
                       onChange={(e) => field.onChange(e.target.value)}
                     />
                   </Form.Control>
-                  <Form.Message />
+                  <Form.Message className="text-red-500" />
                 </Form.Item>
               )}
             />
@@ -116,7 +116,7 @@ const NewEmployeeForm = () => {
                       onChange={(e) => field.onChange(e.target.value)}
                     />
                   </Form.Control>
-                  <Form.Message />
+                  <Form.Message className="text-red-500"/>
                 </Form.Item>
               )}
             />
@@ -135,7 +135,7 @@ const NewEmployeeForm = () => {
                       onChange={(e) => field.onChange(e.target.value)}
                     />
                   </Form.Control>
-                  <Form.Message />
+                  <Form.Message className="text-red-500"/>
                 </Form.Item>
               )}
             />
@@ -152,7 +152,7 @@ const NewEmployeeForm = () => {
                       onChange={field.onChange}
                     />
                   </Form.Control>
-                  <Form.Message />
+                  <Form.Message className="text-red-500"/>
                 </Form.Item>
               )}
             />
