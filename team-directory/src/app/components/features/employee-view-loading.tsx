@@ -14,9 +14,9 @@ const EmployeeViewLoading = () => {
           <h1 className="text-2xl sm:text-3xl font-extrabold text-white">
             <Skeleton className="w-1/2 h-6 bg-gray-500/30 animate-pulse" />
           </h1>
-          <p className="mt-1 text-indigo-100 text-sm sm:text-base">
+          <div className="mt-1 text-indigo-100 text-sm sm:text-base">
             <Skeleton className="w-1/3 h-4 bg-gray-500/30 animate-pulse" />
-          </p>
+          </div>
         </div>
 
         {/* Card Content */}

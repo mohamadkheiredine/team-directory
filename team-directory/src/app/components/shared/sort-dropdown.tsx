@@ -33,7 +33,7 @@ export function SortDropdown({
         </Button>
       </DropdownMenu.Trigger>
 
-      <DropdownMenu.Content align="start">
+      <DropdownMenu.Content align="start" className="bg-gray-50">
         {columns.map(({ id, label }) => (
           <div key={id}>
             <DropdownMenu.Label className='text-xs font-semibold text-muted-foreground'>
