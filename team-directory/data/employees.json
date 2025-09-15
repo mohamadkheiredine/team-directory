@@ -80,14 +80,6 @@
     "status": "active"
   },
   {
-    "id": 11,
-    "slug": "mohamad-kheiredine",
-    "name": "Mohamad Kheiredine",
-    "title": "Data Analyst",
-    "email": "mohamad.kheiredine@example.com",
-    "status": "inactive"
-  },
-  {
     "id": 12,
     "name": "new employee",
     "slug": "new-employee-d3372b",
@@ -101,6 +93,14 @@
     "slug": "test-employee-1fb4c5",
     "title": "Full stack developer",
     "email": "test@gmail.com",
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "name": "Mohamad Employee",
+    "slug": "mohamad-employee-af541c",
+    "title": "Full Stack Web Developer",
+    "email": "kheiredinemhmd@gmail.com",
     "status": "active"
   }
 ]

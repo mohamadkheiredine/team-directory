@@ -36,17 +36,17 @@ export default function SortableHeader<T>({
             {triggerIcon}
           </div>
         </DropdownMenu.Trigger>
-        <DropdownMenu.Content>
+        <DropdownMenu.Content className="bg-gray-50">
           <DropdownMenu.Item
             onClick={() => column.toggleSorting(false)}
-            className="flex items-center justify-start gap-2"
+            className="flex items-center justify-start gap-2 cursor-pointer"
           >
             <ArrowUp className="h-4 w-4" />
             {'Asc'}
           </DropdownMenu.Item>
           <DropdownMenu.Item
             onClick={() => column.toggleSorting(true)}
-            className="flex items-center justify-start gap-2"
+            className="flex items-center justify-start gap-2 cursor-pointer"
           >
             <ArrowDown className="h-4 w-4" />
             {'Desc'}
