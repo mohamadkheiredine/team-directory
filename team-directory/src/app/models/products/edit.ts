@@ -7,21 +7,15 @@ const editProductPayloadSchema = z.object({
   ),
   name: z.string().min(1, { message: "Name is required" }),
   sku: z.string().min(1, { message: "SKU is required" }),
-  price: z.preprocess(
-    (value) => (value === "" ? undefined : Number(value)),
-    z.number().min(0, { message: "Price must be a positive number" })
-  ),
-  stock: z.preprocess(
-    (value) => (value === "" ? undefined : Number(value)),
-    z.number().int().min(0, { message: "Stock must be a positive integer" })
-  ),
+  price: z.string().min(1, { message: "Price is required" }),
+  stock: z.string().min(1, { message: "Stock is required" }),
 });
 
 const editProductFormSchema = z.object({
   name: z.string().min(1, { message: "Name is required" }),
   sku: z.string().min(1, { message: "SKU is required" }),
-  price: z.number().min(0, { message: "Price must be a positive number" }),
-  stock: z.number().int().min(0, { message: "Stock must be a positive integer" }),
+  price: z.string().min(1, { message: "Price is required" }),
+  stock: z.string().min(1, { message: "Stock is required" }),
 });
 
 
