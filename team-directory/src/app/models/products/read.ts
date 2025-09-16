@@ -4,8 +4,8 @@ const productSchema = z.object({
   id: z.number(),
   name: z.string(),
   sku: z.string(),
-  price: z.number().min(0),
-  stock: z.number().min(0),
+  price: z.string(),
+  stock: z.string(),
   createdAt: z.string()
 })
 

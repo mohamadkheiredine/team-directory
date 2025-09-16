@@ -1,8 +1,8 @@
 export async function createProduct(product: {
   name: string;
   sku: string;
-  price: number;
-  stock: number;
+  price: string;
+  stock: string;
 }) {
   await fetch("http://localhost/team-api/index.php/api/products", {
     method: "POST",
@@ -16,8 +16,8 @@ export async function editProduct(
   product: {
     name: string;
     sku: string;
-    price: number;
-    stock: number;
+    price: string;
+    stock: string;
   }
 ) {
   await fetch(`http://localhost/team-api/index.php/api/products/${id}`, {

@@ -160,15 +160,17 @@ const EditProductDialog = ({
                       name="price"
                       render={({ field }) => (
                         <Form.Item className="w-full">
-                          <Form.Label>Price in decimal (.00)</Form.Label>
+                          <Form.Label>Price</Form.Label>
                           <Form.Control>
                             <Input
-                              type="number"
-                              placeholder="Enter product price"
-                              value={field.value ?? ""} // always a number
-                              onChange={(e) =>
-                                field.onChange(Number(e.target.value))
+                              type="text"
+                              placeholder="Enter name"
+                              value={
+                                field.value !== undefined
+                                  ? field.value.toString()
+                                  : ""
                               }
+                              onChange={(e) => field.onChange(e.target.value)}
                             />
                           </Form.Control>
                           <Form.Message className="text-red-500" />
@@ -184,12 +186,14 @@ const EditProductDialog = ({
                           <Form.Label>Stock</Form.Label>
                           <Form.Control>
                             <Input
-                              type="number"
-                              placeholder="Enter product stock"
-                              value={field.value ?? ""} // always a number
-                              onChange={(e) =>
-                                field.onChange(Number(e.target.value))
+                              type="text"
+                              placeholder="Enter name"
+                              value={
+                                field.value !== undefined
+                                  ? field.value.toString()
+                                  : ""
                               }
+                              onChange={(e) => field.onChange(e.target.value)}
                             />
                           </Form.Control>
                           <Form.Message className="text-red-500" />

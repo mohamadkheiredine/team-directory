@@ -157,20 +157,14 @@ const NewProductDialog = () => {
                           <Form.Label>Price</Form.Label>
                           <Form.Control>
                             <Input
-                              type="number"
-                              placeholder="Enter product price"
+                              type="text"
+                              placeholder="Enter product name"
                               value={
                                 field.value !== undefined
                                   ? field.value.toString()
                                   : ""
                               }
-                              onChange={(e) => {
-                                field.onChange(
-                                  e.target.value
-                                    ? parseFloat(e.target.value)
-                                    : undefined
-                                );
-                              }}
+                              onChange={(e) => field.onChange(e.target.value)}
                             />
                           </Form.Control>
                           <Form.Message className="text-red-500" />
@@ -186,20 +180,14 @@ const NewProductDialog = () => {
                           <Form.Label>Stock</Form.Label>
                           <Form.Control>
                             <Input
-                              type="number"
-                              placeholder="Enter product stock"
+                              type="text"
+                              placeholder="Enter product name"
                               value={
                                 field.value !== undefined
                                   ? field.value.toString()
                                   : ""
                               }
-                              onChange={(e) => {
-                                field.onChange(
-                                  e.target.value
-                                    ? parseFloat(e.target.value)
-                                    : undefined
-                                );
-                              }}
+                              onChange={(e) => field.onChange(e.target.value)}
                             />
                           </Form.Control>
                           <Form.Message className="text-red-500" />

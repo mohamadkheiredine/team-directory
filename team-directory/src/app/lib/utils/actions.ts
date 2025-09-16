@@ -3,12 +3,21 @@
 import { FormState } from "@/app/models/form-state";
 import { redirect } from "next/navigation";
 import { createEmployeePayloadSchema } from "@/app/models/employees/create";
-import { createEmployee, deleteEmployee, editEmployee, getLatestId } from "../../data-layer/employees";
+import {
+  createEmployee,
+  deleteEmployee,
+  editEmployee,
+  getLatestId,
+} from "../../data-layer/employees";
 import { Employee } from "@/app/models/employees/read";
 import { editEmployeePayloadSchema } from "@/app/models/employees/edit";
 import { deleteEmployeePayloadSchema } from "@/app/models/employees/delete";
 import { createProductPayloadSchema } from "@/app/models/products/create";
-import { createProduct, deleteProduct, editProduct } from "@/app/data-layer/products";
+import {
+  createProduct,
+  deleteProduct,
+  editProduct,
+} from "@/app/data-layer/products";
 import { editProductPayloadSchema } from "@/app/models/products/edit";
 import { deleteProductPayloadSchema } from "@/app/models/products/delete";
 
@@ -37,7 +46,7 @@ export async function createEmployeeAction(
     }
 
     const latestId = getLatestId();
-    const newEmployee: Employee = {  id: latestId + 1, ...parsed.data };
+    const newEmployee: Employee = { id: latestId + 1, ...parsed.data };
     createEmployee(newEmployee);
   } catch (error) {
     console.error("Error creating employee:", error);
@@ -69,20 +78,26 @@ export async function editEmployeeAction(
       return {
         message: "Invalid form data",
         fields,
-        issues: parsed.error.issues.map((issue) => `${issue.path.join('.')}: ${issue.message}`),
+        issues: parsed.error.issues.map(
+          (issue) => `${issue.path.join(".")}: ${issue.message}`
+        ),
       };
     }
 
     // Update the employee
     await editEmployee(parsed.data.id, {
-      ...parsed.data
+      ...parsed.data,
     });
   } catch (error) {
-    console.error('Error updating employee:', error);
-    return { success: false, message: "Failed to update employee.", issues: [error instanceof Error ? error.message : String(error)] };
+    console.error("Error updating employee:", error);
+    return {
+      success: false,
+      message: "Failed to update employee.",
+      issues: [error instanceof Error ? error.message : String(error)],
+    };
   }
 
-  redirect('/employees');
+  redirect("/employees");
 }
 
 export async function deleteEmployeeAction(
@@ -107,13 +122,16 @@ export async function deleteEmployeeAction(
 
     // Delete the employee
     await deleteEmployee(parsed.data.id);
-
   } catch (error) {
-    console.error('Error deleting employee:', error);
-    return { success: false, message: "Failed to delete employee.", issues: [error instanceof Error ? error.message : String(error)] };
+    console.error("Error deleting employee:", error);
+    return {
+      success: false,
+      message: "Failed to delete employee.",
+      issues: [error instanceof Error ? error.message : String(error)],
+    };
   }
 
-  redirect('/employees');
+  redirect("/employees");
 }
 
 export async function createProductAction(
@@ -152,7 +170,6 @@ export async function createProductAction(
   redirect("/products");
 }
 
-
 export async function editProductAction(
   _: FormState,
   data: FormData
@@ -166,26 +183,34 @@ export async function editProductAction(
     if (!parsed.success) {
       const fields: Record<string, string> = {};
       for (const key of Object.keys(formData)) {
-        fields[key] = JSON.stringify(formData[key]);
+        fields[key] =
+          key === "price" || key === "stock" || key === "id"
+            ? String(Number(formData[key]))
+            : (formData[key] as string);
       }
       return {
         message: "Invalid form data",
         fields,
-        issues: parsed.error.issues.map((issue) => `${issue.path.join('.')}: ${issue.message}`),
+        issues: parsed.error.issues.map(
+          (issue) => `${issue.path.join(".")}: ${issue.message}`
+        ),
       };
     }
     // Update the product
     await editProduct(parsed.data.id, {
-      ...parsed.data
+      ...parsed.data,
     });
   } catch (error) {
-    console.error('Error updating product:', error);
-    return { success: false, message: "Failed to update product.", issues: [error instanceof Error ? error.message : String(error)] };
+    console.error("Error updating product:", error);
+    return {
+      success: false,
+      message: "Failed to update product.",
+      issues: [error instanceof Error ? error.message : String(error)],
+    };
   }
 
-  redirect('/products');
+  redirect("/products");
 }
-
 
 export async function deleteProductAction(
   _: FormState,
@@ -209,11 +234,14 @@ export async function deleteProductAction(
 
     // Delete the product
     await deleteProduct(parsed.data.id);
-
   } catch (error) {
-    console.error('Error deleting product:', error);
-    return { success: false, message: "Failed to delete product.", issues: [error instanceof Error ? error.message : String(error)] };
+    console.error("Error deleting product:", error);
+    return {
+      success: false,
+      message: "Failed to delete product.",
+      issues: [error instanceof Error ? error.message : String(error)],
+    };
   }
 
-  redirect('/products');
+  redirect("/products");
 }
