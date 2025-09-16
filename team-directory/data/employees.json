@@ -94,5 +94,13 @@
     "title": "Full Stack Web Developer",
     "email": "kheiredinemhmd@gmail.com",
     "status": "active"
+  },
+  {
+    "id": 15,
+    "name": "new employee-edited",
+    "slug": "new-employee-165481",
+    "title": "QA engineer",
+    "email": "new-email@gmail.com",
+    "status": "active"
   }
 ]

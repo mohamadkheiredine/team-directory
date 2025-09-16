@@ -67,8 +67,6 @@ const NewEmployeeForm = () => {
     [form, formAction]
   );
 
-  // await new Promise((resolve) => setTimeout(resolve, 5000));
-
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-50 p-4">
       <Card className="w-full max-w-lg shadow-lg rounded-xl bg-white border border-gray-200">
