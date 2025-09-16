@@ -61,7 +61,7 @@
     "name": "Henry Martin",
     "title": "Frontend Developer",
     "email": "henry.martin@example.com",
-    "status": "inactive"
+    "status": "active"
   },
   {
     "id": 9,
@@ -78,14 +78,6 @@
     "title": "Data Analyst",
     "email": "jack.turner@example.com",
     "status": "active"
-  },
-  {
-    "id": 12,
-    "name": "new employee",
-    "slug": "new-employee-d3372b",
-    "title": "QA engineer",
-    "email": "new-email@gmail.com",
-    "status": "inactive"
   },
   {
     "id": 13,

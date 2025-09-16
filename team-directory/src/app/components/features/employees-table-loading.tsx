@@ -1,7 +1,7 @@
 "use client";
 import DataGrid from "../shared/data-grid";
 import { Skeleton } from "../shared/skeleton";
-import { Employee } from "../../../../models/employees/read";
+import { Employee } from "@/app/models/employees/read";
 import { ColumnDef } from "@tanstack/react-table";
 
 type GridAwareColumn<T> = ColumnDef<T> & {
@@ -86,7 +86,7 @@ const EmployeesTableLoading = () => {
     status: "inactive",
   }));
 
-   const mobileGrid = `
+  const mobileGrid = `
   gap-4
   border-b
   p-4

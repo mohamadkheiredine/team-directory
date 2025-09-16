@@ -23,9 +23,9 @@ const EmployeeViewLoading = () => {
         <Card.Content className="p-4 sm:p-8 space-y-6">
           {/* Email */}
           <div>
-            <p className="mt-1 text-gray-800 text-sm sm:text-base break-all">
+            <div className="mt-1 text-gray-800 text-sm sm:text-base break-all">
               <Skeleton className="w-full h-4 bg-gray-500/30 animate-pulse" />
-            </p>
+            </div>
           </div>
 
           {/* Status */}
