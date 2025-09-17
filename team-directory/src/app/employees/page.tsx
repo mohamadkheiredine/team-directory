@@ -2,7 +2,7 @@ import Link from "next/link";
 import EmployeesTable from "../components/features/employee-table";
 
 export default async function EmployeesPage() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/employees`);
+  const res = await fetch(`http://localhost:3000/api/employees`);
   const employees = await res.json();
 
   return (
