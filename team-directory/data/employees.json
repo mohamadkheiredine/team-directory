@@ -80,27 +80,11 @@
     "status": "active"
   },
   {
-    "id": 13,
-    "name": "Test employee",
-    "slug": "test-employee-1fb4c5",
-    "title": "Full stack developer",
-    "email": "test@gmail.com",
-    "status": "active"
-  },
-  {
-    "id": 14,
-    "name": "Mohamad Employee",
-    "slug": "mohamad-employee-af541c",
+    "id": 16,
+    "name": "Mohamad Kheiredine-edited",
+    "slug": "mohamad-kheiredine-e9ac1e",
     "title": "Full Stack Web Developer",
     "email": "kheiredinemhmd@gmail.com",
-    "status": "active"
-  },
-  {
-    "id": 15,
-    "name": "new employee-edited",
-    "slug": "new-employee-165481",
-    "title": "QA engineer",
-    "email": "new-email@gmail.com",
-    "status": "active"
+    "status": "inactive"
   }
 ]

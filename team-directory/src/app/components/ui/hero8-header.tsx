@@ -7,6 +7,7 @@ import React from "react";
 const menuItems = [
   { name: "View Employees", href: "/employees" },
   { name: "New Employee", href: "/employees/new" },
+{ name: "View Products", href: "/products" }
 ];
 
 export const HeroHeader = () => {
