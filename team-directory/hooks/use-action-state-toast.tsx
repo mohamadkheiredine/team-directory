@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { toast } from 'sonner';
-import type { FormState } from '../models/form-state';
+import type { FormState } from '@/app/models/form-state';
 
 export function useActionStateToast(state: FormState | null | undefined, options: {
   duration?: number;
